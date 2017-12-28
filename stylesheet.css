@@ -1,0 +1,72 @@
+
+body {
+  background-color: #eeeeee;
+}
+
+.icons {
+  display: inline-block;
+  padding-right: 10px;
+  font-size: 40px;
+}
+
+.fa {
+  color: black;
+}
+
+.center {
+  text-align: center;
+  padding-top: 45px;
+}
+
+.figure {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  border: 1px #e4e4e4 solid;
+}
+
+.hover {
+  color: #01579b;
+}
+
+#shadow {
+  text-shadow: 1px 1px #757575;
+}
+
+#name {
+  letter-spacing: 1.5px;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 32px;
+}
+
+#description {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 55%;
+  box-sizing: border-box;
+  font-size: 20px;
+  text-align: justify;
+  font-family: 'Open Sans';
+}
+
+#avatar {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#linkicons-header {
+
+}
+
+#console {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 650px;
+  box-sizing: border-box;
+  font-size: 12px;
+  border-radius: 5px;
+}
