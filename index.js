@@ -59,5 +59,18 @@ $( document ).ready(function() {
 
   $(".button-collapse").sideNav();
 
-
+//   $(".blog").click(function() {
+//     $("#description").remove();
+//     $.ajax({
+//       'url' : 'https://s3-us-west-1.amazonaws.com/nzenitram-medium-posts/2016-11-27_My-Introduction-to-AWS-c23c83c2c1c4.html',
+//       'type' : 'GET',
+//       'headers' : {
+//           'Access-Control-Allow-Origin': '*'
+//         },
+//       'success' : function(data){
+//         $('#main').append(data)
+//       }
+//     })
+//     $('#m')
+//   })
 });
