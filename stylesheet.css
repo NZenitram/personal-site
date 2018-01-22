@@ -1,6 +1,41 @@
 
+@media screen and (min-width: 992px) {
+  body {
+    background-color: #eeeeee;
+    padding-left: 300px;
+    padding-bottom: 2%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #console {
+    display: none;
+  }
+
+  #console-warning {
+    display: none;
+  }
+}
+
 body {
   background-color: #eeeeee;
+  padding-bottom: 2%;
+}
+
+p {
+  font-family: 'Open Sans';
+  text-align: justify;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .icons {
@@ -31,6 +66,15 @@ body {
   color: #01579b;
 }
 
+.hamburger {
+  padding-left: 5%;
+  padding-top: 5%
+}
+
+#code-image {
+  filter: brightness(60%)
+}
+
 #shadow {
   text-shadow: 1px 1px #757575;
 }
@@ -44,11 +88,9 @@ body {
 #description {
   margin-right: auto;
   margin-left: auto;
-  max-width: 55%;
+  max-width: 85%;
   box-sizing: border-box;
-  font-size: 20px;
-  text-align: justify;
-  font-family: 'Open Sans';
+  font-size: 18px;
 }
 
 #avatar {
@@ -59,13 +101,14 @@ body {
 }
 
 #linkicons-header {
-
+  padding-left: 2%;
+  padding-top: 1%
 }
 
 #console {
   margin-right: auto;
   margin-left: auto;
-  max-width: 650px;
+  max-width: 70%;
   box-sizing: border-box;
   font-size: 12px;
   border-radius: 5px;

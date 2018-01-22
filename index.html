@@ -1,76 +1,146 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <link rel="icon" type="image/jpg" href="https://s3-us-west-1.amazonaws.com/nzenitramwp/Nick+Martinez-min.jpg">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  <link rel="stylesheet" href="font-awesome.css" type="text/css">
-  <link rel="stylesheet" href="stylesheet.css" type="text/css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-
-  <script src="js/jquery.terminal-0.11.23.min.js"></script>
-  <script src="js/jquery.mousewheel-min.js"></script>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <link href="https://s3-us-west-1.amazonaws.com/nzenitramwp/Nick+Martinez-min.jpg" rel="icon" type="image/jpg"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+  </script>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <link href="font-awesome.css" rel="stylesheet" type="text/css"/>
+  <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" rel="stylesheet"/>
+  <script src="js/jquery.terminal-0.11.23.min.js">
+  </script>
+  <script src="js/jquery.mousewheel-min.js">
+  </script>
   <link href="css/jquery.terminal-0.11.23.min.css" rel="stylesheet"/>
-
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&effect">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
-  <script src="index.js"></script>
-  <title> NZenitram </title>
-</head>
-<body>
-<!-- <button class="button-collapse"> -->
-  <ul id="slide-out" class="side-nav">
-    <li><div class="userView">
-      <div class="background">
-        <img src="https://s3-us-west-1.amazonaws.com/nzenitramwp/code1.jpg">
-      </div>
-      <a href="#!u"><img class="circle" src="https://s3-us-west-1.amazonaws.com/nzenitramwp/Nick+Martinez-min.jpg"></a>
-      <a href="#!name"><span class="white-text name">Nicholas Martinez</span></a>
-      <a href="#!email"><span class="white-text email">nicholasmartinez@gmail.com</span></a>
-    </div></li>
-    <li><a href="https://www.linkedin.com/in/nzenitram" target="_blank"><i class="fa fa-linkedin" ></i>LinkedIn</a></li>
-    <li><a href="https://www.github.com/nzenitram" target="_blank"><i class="fa fa-github"></i>GitHub</a></li>
-    <li><a href="https://www.turing.io/alumni/nicholas-martinez" target="_blank"><i class="fa fa-graduation-cap"></i>Turing School</a></li>
-    <li><a href="https://medium.com/@nZenitram" target="_blank"><i class="fa fa-pencil-square-o"></i>Blog</a></li>
-    <li><a href="https://angel.co/nicholasmartinez-gmail-com" target="_blank"><i class="fa fa-angellist"></i>Angel</a></li>
-    <li><a href="mailto:nicholasmartinez@gmail.com"><i class="fa fa-envelope"></i>Email</a></li>
-    <li><div class="divider"></div></li>
-    <li><a class="subheader">AWS</a></li>
-    <li><a class="waves-effect blog" href="https://medium.com/@nZenitram/my-introduction-to-aws-c23c83c2c1c4#.4dme5lcm4">My Introduction to AWS</a></li>
-    <li><a class="waves-effect" href="https://medium.com/@eZenitram/setting-up-your-identity-and-access-management-for-aws-6245e4ccf6c1#.hbg91yhdu">Setting up your IAM for AWS</a></li>
-    <li><a class="waves-effect" href="https://medium.com/@nZenitram/spinning-up-an-ec2-instance-ef7e81044dc4#.7doy0xo7i">Spinning up an EC2 instance </a></li>
-    <li><a class="waves-effect" href="https://medium.com/@nZenitram/lets-talk-aws-simple-storage-service-974072b10a30">Lets talk AWS Simple Storage Service </a></li>
-  </ul>
-  <div id="header" class="center">
-    <div id="name-header">
-      <h2 id="name">Nicholas Martinez</h1>
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC&amp;effect" rel="stylesheet" type="text/css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js">
+  </script>
+  <script src="index.js">
+  </script>
+  <title>
+   NZenitram
+  </title>
+ </head>
+ <body>
+  <i class="fa fa-bars fa-2x hide-on-large-only hamburger button-collapse" data-activates="slide-out">
+  </i>
+  <ul class="side-nav fixed" id="slide-out">
+   <li>
+    <div class="userView">
+     <div class="background">
+      <img id="code-image" src="https://s3-us-west-1.amazonaws.com/nzenitramwp/code1.jpg"/>
+     </div>
+     <a href="#!u">
+      <img class="circle" id="small-img" src="https://s3-us-west-1.amazonaws.com/nzenitramwp/Nick+Martinez-min.jpg"/>
+     </a>
+     <a href="#!name">
+      <span class="white-text name">
+       Nicholas Martinez
+      </span>
+     </a>
     </div>
-      <div id="avatar">
-        <figure>
-          <img href="#" alt="Nicholas Martinez" id="avatar" class="figure z-depth-5 button-collapse" href="#" data-activates="slide-out" src="https://s3-us-west-1.amazonaws.com/nzenitramwp/Nick+Martinez-min.jpg">
-        </figure>
-      </div>
-        <div id="linkicons-header" style="visibility: hidden">
-          <div id="linkedin-icon" class="icons" title="LinkedIn">
-            <a class="info-link InfoNav button-collapse" href="#" rel="me" data-activates="slide-out"><i id="shadow" class="fa fa-info-circle "></i></a>
-          </div>
-        </div>
-      <div id="main">
-        <p id="description">
-          Currently working remotely for 250OK, an Indianapolis based email data analytics company. I have been working primarily in Python and Selenium building a back-end application that integrates four separate platforms and operating systems. In general, I am working with UI automation across Windows, MacOS, iOS and Android operating systems.
-
-          <br><br>
-          Independently, I have been working on my AWS Certified Solutions Architect certification through aCloud.guru's labs and lessons. I have also spent time studying and learning React JS through Frontend Master's as well as Chef's Infrastructure as Code through learn.chef.io.
-        </p>
-      </div>
+   </li>
+   <li>
+    <a href="https://www.linkedin.com/in/nzenitram" target="_blank">
+     <i class="fa fa-linkedin">
+     </i>
+     LinkedIn
+    </a>
+   </li>
+   <li>
+    <a href="https://www.github.com/nzenitram" target="_blank">
+     <i class="fa fa-github">
+     </i>
+     GitHub
+    </a>
+   </li>
+   <li>
+    <a href="https://www.turing.io/alumni/nicholas-martinez" target="_blank">
+     <i class="fa fa-graduation-cap">
+     </i>
+     Turing School
+    </a>
+   </li>
+   <li>
+    <a href="https://medium.com/@nZenitram" target="_blank">
+     <i class="fa fa-pencil-square-o">
+     </i>
+     Blog
+    </a>
+   </li>
+   <li>
+    <a href="mailto:nicholasmartinez@gmail.com">
+     <i class="fa fa-envelope">
+     </i>
+     Email
+    </a>
+   </li>
+   <li>
+    <div class="divider">
+    </div>
+   </li>
+   <li>
+    <a class="subheader">
+     AWS
+    </a>
+   </li>
+   <li>
+    <a class="waves-effect blog" name="https://s3-us-west-1.amazonaws.com/nzenitram-medium-posts/My-Introduction-to-AWS.html">
+     My Introduction to AWS
+    </a>
+   </li>
+   <li>
+    <a class="waves-effect blog" name="https://s3-us-west-1.amazonaws.com/nzenitram-medium-posts/Setting-up-your-Identity-and-Access-Management-for-AWS.html">
+     Setting up your IAM for AWS
+    </a>
+   </li>
+   <li>
+    <a class="waves-effect blog" name="https://s3-us-west-1.amazonaws.com/nzenitram-medium-posts/Spinning-up-an-EC2-instance-.html">
+     Spinning up an EC2 instance
+    </a>
+   </li>
+   <li>
+    <a class="waves-effect blog" name="https://s3-us-west-1.amazonaws.com/nzenitram-medium-posts/Lets-talk-AWS-Simple-Storage-Service.html">
+     Lets talk AWS Simple Storage Service
+    </a>
+   </li>
+   <li>
+    <a class="waves-effect blog" name="https://s3-us-west-1.amazonaws.com/nzenitram-medium-posts/Medium--Lambda--and-Me--or-how-I-export-Medium-stories-to-my-website-.html">
+     Medium  Lambda  and Me  or how I export Medium stories to my website
+    </a>
+   </li>
+  </ul>
+  <div class="row">
+   <div id="description">
+    <div class="center" id="header">
+     <div id="name-header">
+      <h2 id="name">
+       Nicholas Martinez
+      </h2>
+     </div>
+     <div id="avatar">
+      <img alt="Nicholas Martinez" class="figure z-depth-5" href="/" src="https://s3-us-west-1.amazonaws.com/nzenitramwp/Nick+Martinez-min.jpg"/>
+     </div>
+     <div id="main">
+      <p>
+       Currently working remotely for 250OK, an Indianapolis based email data analytics company. I have been working primarily in Python and Selenium building a back-end application that integrates four separate platforms and operating systems. In general, I am working with UI automation across Windows, MacOS, iOS and Android operating systems.
+       <br/>
+       <br/>
+       Independently, I have been working on my AWS Certified Solutions Architect certification through aCloud.guru's labs and lessons. I have also spent time studying and learning React JS through Frontend Master's as well as Chef's Infrastructure as Code through learn.chef.io.
+      </p>
+     </div>
+    </div>
+   </div>
+   <div class="center" id="console-warning">
+    <p style="color: black;text-align:center">
+     (Type 'Reveal' in the console to reveal links, or 'Help' for more command information)
+    </p>
+   </div>
   </div>
-	<div class="center" id="console-warning">
-
-	 <p style="color: black">(Type 'Reveal' in the console to reveal links, or 'Help' for more command information)</p>
-	</div>
-  <div id="console" class="z-depth-5">
-
+  <div class="z-depth-5 typewriter" id="console">
   </div>
-</body>
+ </body>
 </html>
